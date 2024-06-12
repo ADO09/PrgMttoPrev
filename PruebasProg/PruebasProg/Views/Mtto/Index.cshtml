@@ -53,17 +53,16 @@
 {
           @foreach (var item in Model)
           {
-            <tr>
-              <td>@item.IdLinea</td>
-              <td>@item.IdPlanta</td>
+            <tr class="container-RowData">
+              <td class="IdLinea">@item.IdLinea</td>
+              <td class="IdPlanta">@item.IdPlanta</td>
 
 
          @*      <td>@item.RealizadoPor</td>
               <td>@item.RevisadoPor</td> *@
 
 
-
-              <td>@item.FechaPROG</td>
+              <td class="FechaPROG">@item.FechaPROG</td>
 
 
           @*     <td>@item.FechaRealiz</td>
@@ -219,8 +218,11 @@
 
 
 <script type="module">
-    import { $ } from "/js/utils.js";
-    import { obtenerDatosMtto, contenedorDatos } from '/js/MttoIndex.js'
+    import { $,$a } from "/js/utils.js";
+    import { obtenerDatosMtto, contenedorDatos, mostrarDetalles } from '/js/MttoIndex.js'
     //document.addEventListener('DOMContentLoaded', obtenerDatosMtto);
-    $('.container-RowData').addEventListener('click', contenedorDatos);
+    const filas = $a('.container-RowData');
+    filas.forEach((fila) => {
+        fila.addEventListener('click', mostrarDetalles);
+    });
 </script>

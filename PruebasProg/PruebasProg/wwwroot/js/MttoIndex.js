@@ -25,6 +25,16 @@ export const obtenerDatosMtto = async () => {
 //---------------------------------------------------
 
 
+export const mostrarDetalles =  (e) => {
+    const fila = e.currentTarget;
+    const idLinea = fila.querySelector('.IdLinea').textContent;
+    const idPlanta = fila.querySelector('.IdPlanta').textContent;
+    const fechaProg = fila.querySelector('.FechaPROG').textContent;
+
+    // Realiza la acción específica que deseas con los datos obtenidos
+    console.log(`Detalles de la fila: IdLinea=${idLinea}, IdPlanta=${idPlanta}, FechaPROG=${fechaProg}`);
+    // Aquí puedes implementar tu lógica personalizada
+}
 
 
 

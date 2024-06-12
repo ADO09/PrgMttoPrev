@@ -184,11 +184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\PruebasProg\\PruebasProg.csproj",
+      "projectUniqueName": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\PruebasProg.csproj",
       "projectName": "PruebasProg",
-      "projectPath": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\PruebasProg\\PruebasProg.csproj",
+      "projectPath": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\PruebasProg.csproj",
       "packagesPath": "C:\\Users\\jaime.cardenas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\PruebasProg\\obj\\",
+      "outputPath": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jaime.cardenas\\AppData\\Roaming\\NuGet\\NuGet.Config",
