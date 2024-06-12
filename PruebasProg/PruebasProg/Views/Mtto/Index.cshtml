@@ -1,0 +1,226 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<MttoListModel>
+
+
+
+
+
+<div class="card movil">
+    <div class="card-header">Lista de patrullaje de líneas</div>
+    <div class="card-body">
+        <div class="container-buttons-listado">
+    
+            @* <a class="btn btn-primary btn-sm" id="btnFiltrar">&#9881;</a> *@
+        </div>
+        <hr />
+        
+
+        <div class="container-items">
+
+            <table class="table">
+        <thead>
+           @if (Model.Any())
+{
+          <tr>
+            <th>Linea</th>
+            <th>Planta</th>
+
+   @*          <th>realizado por</th>
+            <th>revisado por</th>
+ *@
+
+            <th>fecha proggramada</th>
+
+
+         @*    <th>Fecha realizada</th> *@
+            <th>Serie</th>
+            <th> Estatus </th>
+            <th>Estacion</th>
+          @*   <th>Problemas encontrados</th>
+            <th>Cambios realizados</th> *@
+            <th>Comentarios</th>
+
+           @*  <th>Estado</th> *@
+            <th></th>
+          </tr>
+          }
+        </thead>
+        <tbody>
+            @if (Model.Any())
+{
+          @foreach (var item in Model)
+          {
+            <tr>
+              <td>@item.IdLinea</td>
+              <td>@item.IdPlanta</td>
+
+
+         @*      <td>@item.RealizadoPor</td>
+              <td>@item.RevisadoPor</td> *@
+
+
+
+              <td>@item.FechaPROG</td>
+
+
+          @*     <td>@item.FechaRealiz</td>
+ *@
+
+
+              <td>@item.Nserie</td>
+              <td>@item.Estatus</td>
+              <td>@item.Estacion</td>
+
+
+      @*         <td>@item.ProblemasEncontrados</td>
+              <td>@item.CambiosRealizados</td> *@
+
+
+
+              <td>@item.Comentarios</td>
+
+
+              
+     @*          <td><img  src="@item.path_imagen" alt="" width="50px" height="50px" alt="Card image cap" loading="lazy"
+                  style="aspect-ratio: 16/9;object-fit:cover;cursor:pointer;border-radius:7px"></td>
+              <td style="max-width: 300px;"> 
+              \   <p class="card-text-small" title="@item.comentario">
+                  @item.comentario
+                </p> 
+              </td> 
+                       
+               <td>
+                 <small>@item.FechaPROG</small>
+                 <small>@item.FechaRealiz</small>
+                 </td> 
+               <td>
+                @if (item.estado != null)
+                {
+                  <p class="right @(item.estado.Value ? "activo" : "finalizado")">
+                    @(item.estado.Value ? "Activo" : "Finalizado")
+                  </p>
+
+                }
+              </td>  *@
+              
+              <td>
+           <div class="container-button-liberar">
+                        @if (item.Estatus != null)
+                        {
+                        @if(item.Estatus == "activo"){
+                        <button class="btn btn-danger btn-sm" id="btnLiberarP" name="@item.IdMTTO">Liberar</button>
+                        }else if(item.Estatus == "pendiente"){
+                        <button  class="btn btn-warning btn-sm" id="btnInfoLiberarP" @* name="@item.path_imagen_after" *@>pendiente</button>
+                       @*  <p style="display: none;" id="perosnaLiberaHide">@item.persona_libera</p>
+                        <p style="display: none;" id="fechaLiberacion">@item.updated_at</p> *@
+                        }
+
+                      @*   <small>@item.created_at</small> *@
+
+                        }
+
+                 </div>
+              </td>
+
+              @* <td>
+            <a asp-action="Producto" asp-controller="Home" asp-route-idProducto="@item.id"
+            class="btn btn-primary btn-sm">Editar</a>
+            <a asp-action="Eliminar" asp-controller="Home" asp-route-idProducto="@item.id"
+            class="btn btn-danger btn-sm">Eliminar</a>
+            </td> *@
+            </tr>
+          } 
+          }
+        else
+{
+    <td><p>No hay registros disponibles.</p></td>
+}
+          
+          
+        </tbody>
+        
+      </table>
+
+
+            <div class="container-card-item">
+                @if (Model.Any())
+                {
+                    @foreach (var item in Model)
+                    {
+                        <div class="card item">
+                            @* <img class="card-img-top" src="@item.path_imagen" alt="Card image cap" loading="lazy" /> *@
+                            <div class="card-body">
+                                <div class="container-description">
+                                    @* <p id="idHide" style="display: none;">@item.id</p> *@
+                                    <p>Planta:</p>
+                                    <p class="right">@item.IdLinea</p>
+                                    <p>Linea:</p>
+                                    <p class="right">@item.IdPlanta</p>
+                                    <p>Estación:</p>
+                                    <p class="right">@item.RealizadoPor</p>
+                                    <p class="right">@item.RevisadoPor</p>
+                                    <p class="right">@item.FechaPROG</p>
+                                    <p class="right">@item.FechaRealiz</p>
+                                    @*    <p>Estado:</p>
+                            @if (item.estado != null)
+                            {
+                            <p class="right @(item.estado.Value ? "activo" : "finalizado")">
+                            @(item.estado.Value ? "Activo" : "Finalizado")
+                            </p>
+
+                            } *@
+
+                                </div>
+                                <hr>
+                                <p>Comentario: </p>
+                                @* <p class="card-text">
+                        @item.comentario
+                        </p> *@
+                                <hr>
+                                    <div class="container-button-liberar">
+                        @if (item.Estatus != null)
+                        {
+                        @if(item.Estatus == "activo"){
+                        <button class="btn btn-danger btn-sm" id="btnLiberarP" name="@item.IdMTTO">Liberar</button>
+                        }else if(item.Estatus == "pendiente"){
+                        <button  class="btn btn-warning btn-sm" id="btnInfoLiberarP" @* name="@item.path_imagen_after" *@>pendiente</button>
+                       @*  <p style="display: none;" id="perosnaLiberaHide">@item.persona_libera</p>
+                        <p style="display: none;" id="fechaLiberacion">@item.updated_at</p> *@
+                        }
+
+                      @*   <small>@item.created_at</small> *@
+
+                        }
+
+                        </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>No hay registros disponibles.</p>
+                }
+            </div>
+
+
+     
+            
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+<script type="module">
+    import { $ } from "/js/utils.js";
+    import { obtenerDatosMtto, contenedorDatos } from '/js/MttoIndex.js'
+    //document.addEventListener('DOMContentLoaded', obtenerDatosMtto);
+    $('.container-RowData').addEventListener('click', contenedorDatos);
+</script>

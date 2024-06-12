@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\pruebasprog\\pruebasprog\\views\\mtto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\views\\mtto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\pruebasprog\\pruebasprog\\wwwroot\\js\\mttoindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\wwwroot\\js\\mttoindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\PruebasProg\\Views\\Mtto\\Index.cshtml",
+              "RelativeDocumentMoniker": "PruebasProg\\Views\\Mtto\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\PruebasProg\\Views\\Mtto\\Index.cshtml",
+              "RelativeToolTip": "PruebasProg\\Views\\Mtto\\Index.cshtml",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAJgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:57:08.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MttoIndex.js",
+              "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\PruebasProg\\wwwroot\\js\\MttoIndex.js",
+              "RelativeDocumentMoniker": "PruebasProg\\wwwroot\\js\\MttoIndex.js",
+              "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\PruebasProg\\PruebasProg\\wwwroot\\js\\MttoIndex.js",
+              "RelativeToolTip": "PruebasProg\\wwwroot\\js\\MttoIndex.js",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-12T15:45:51.182Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

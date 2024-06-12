@@ -1,0 +1,34 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file: db/dbSQLITE.db"
+}
+
+
+
+model MttosTable {
+  idMTTO     Int      @id @default(autoincrement())
+  idLinea    Int?
+  idPlanta   Int?
+  Nserie     String?
+  comentarios String?
+  problemasEncontrados String?
+  cambiosRealizados String?
+  path_IMG String?
+  FechaPROG  String?
+  FechaRealiz String?
+  RealizadoPor String?
+  RevisadoPor String?
+  AprobadoPor String?
+  estatus String?
+  estacion String?
+}
