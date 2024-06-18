@@ -30,3 +30,9 @@ body {
 /*.container-card-item {
     display: block;
 }*/
+
+
+.container-RowData:hover {
+    background-color: #60FE43; /* Color de fondo original */
+    /*opacity: 0.5;*/ /* Opacidad del 50% */
+}
