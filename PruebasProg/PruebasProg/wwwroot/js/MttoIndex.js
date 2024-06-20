@@ -34,8 +34,8 @@ export const mostrarDetalles =  (e) => {
 
     const fechaRealiz = fila.querySelector('.FR').textContent;
 
-    const fechaProg = new Date(fP);
-    const fechaProg = new Date(fechaStr);
+    const fechaStr = new Date(fP);
+    const fechaProg = fechaStr;
 
 
     const realizadoPor = fila.querySelector('.RalP').textContent;
@@ -95,8 +95,8 @@ export const mostrarDetalles =  (e) => {
 
 
 
-
-
+    const nombresVariables = Object.keys(miLista);
+    console.log(nombresVariables);
 
     // Realiza la acción específica que deseas con los datos obtenidos
     //console.log(`Detalles de la fila: IdMTTO=${idMtto}, IdLinea=${idLinea}, IdPlanta=${idPlanta}, FechaPROG=${fechaProg}`);
@@ -136,7 +136,13 @@ export const mostrarDetalles =  (e) => {
 
         // Crear el campo de entrada
         const input = document.createElement("input");
-        input.type = "text";
+        if (indice == 2) {
+            input.type = "date";
+        } else {
+            input.type = "text";
+
+        }
+        
         input.id = valor;
         input.className = "form-control form-control-sm";
         input.name = valor;
