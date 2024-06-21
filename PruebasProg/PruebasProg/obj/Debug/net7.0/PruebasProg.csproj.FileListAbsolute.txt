@@ -67,3 +67,9 @@ C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\obj\
 C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\obj\Debug\net7.0\PruebasProg.pdb
 C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\obj\Debug\net7.0\PruebasProg.genruntimeconfig.cache
 C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\obj\Debug\net7.0\ref\PruebasProg.dll
+C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\bin\Debug\net7.0\Aspose.Cells.dll
+C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\bin\Debug\net7.0\SkiaSharp.dll
+C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\bin\Debug\net7.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\bin\Debug\net7.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\bin\Debug\net7.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\jaime.cardenas\Desktop\Prog\GIT-PROG-MTTOS\PruebasProg\PruebasProg\bin\Debug\net7.0\runtimes\win-x86\native\libSkiaSharp.dll

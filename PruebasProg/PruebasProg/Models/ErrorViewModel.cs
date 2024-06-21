@@ -1,3 +1,5 @@
+using Aspose.Cells;
+
 namespace PruebasProg.Models
 {
     public class ErrorViewModel
@@ -7,3 +9,6 @@ namespace PruebasProg.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+
+
+

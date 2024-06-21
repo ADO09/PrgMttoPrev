@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\wwwroot\\js\\mttoindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\wwwroot\\js\\mttoindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\wwwroot\\js\\utils.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\wwwroot\\js\\utils.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\wwwroot\\js\\mttoindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\wwwroot\\js\\mttoindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\views\\mtto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\views\\mtto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\models\\mttolistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\models\\mttolistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\controllers\\mttocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\controllers\\mttocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\wwwroot\\js\\utils.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\wwwroot\\js\\utils.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|c:\\users\\jaime.cardenas\\desktop\\prog\\git-prog-mttos\\pruebasprog\\pruebasprog\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{35844DA3-5336-4A73-BA6F-F203268C8920}|PruebasProg\\PruebasProg.csproj|solutionrelative:pruebasprog\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "utils.js",
               "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\js\\utils.js",
               "RelativeDocumentMoniker": "PruebasProg\\wwwroot\\js\\utils.js",
@@ -48,19 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MttoListModel.cs",
-              "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Models\\MttoListModel.cs",
-              "RelativeDocumentMoniker": "PruebasProg\\Models\\MttoListModel.cs",
-              "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Models\\MttoListModel.cs",
-              "RelativeToolTip": "PruebasProg\\Models\\MttoListModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T15:47:24.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "PruebasProg\\wwwroot\\css\\site.css",
@@ -68,7 +68,61 @@
               "RelativeToolTip": "PruebasProg\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAAkAAAAAAAAAAADwvx8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-17T15:36:25.078Z"
+              "WhenOpened": "2024-06-17T15:36:25.078Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MttoController.cs",
+              "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Controllers\\MttoController.cs",
+              "RelativeDocumentMoniker": "PruebasProg\\Controllers\\MttoController.cs",
+              "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Controllers\\MttoController.cs",
+              "RelativeToolTip": "PruebasProg\\Controllers\\MttoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T21:10:21.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PruebasProg\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PruebasProg\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:57:15.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "PruebasProg\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "PruebasProg\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:39:23.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MttoListModel.cs",
+              "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Models\\MttoListModel.cs",
+              "RelativeDocumentMoniker": "PruebasProg\\Models\\MttoListModel.cs",
+              "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Models\\MttoListModel.cs",
+              "RelativeToolTip": "PruebasProg\\Models\\MttoListModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:47:24.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -78,19 +132,20 @@
               "RelativeDocumentMoniker": "PruebasProg\\Views\\Mtto\\Index.cshtml",
               "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\Views\\Mtto\\Index.cshtml",
               "RelativeToolTip": "PruebasProg\\Views\\Mtto\\Index.cshtml",
-              "ViewState": "AQIAAO4AAAAAAAAAAAAYwPcAAAAEAAAA",
+              "ViewState": "AQIAAPoAAAAAAAAAAAAAAAcBAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T21:49:20.167Z"
+              "WhenOpened": "2024-06-12T21:49:20.167Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MttoIndex.js",
               "DocumentMoniker": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\js\\MttoIndex.js",
               "RelativeDocumentMoniker": "PruebasProg\\wwwroot\\js\\MttoIndex.js",
               "ToolTip": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\js\\MttoIndex.js",
               "RelativeToolTip": "PruebasProg\\wwwroot\\js\\MttoIndex.js",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAAIUAAAA0AAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAQwJsAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-12T21:02:14.502Z",
               "EditorCaption": ""

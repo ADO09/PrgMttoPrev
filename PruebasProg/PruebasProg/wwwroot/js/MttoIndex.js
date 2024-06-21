@@ -30,12 +30,12 @@ export const mostrarDetalles =  (e) => {
     // Ejemplo de creación de variables para cada elemento
     const idLinea = fila.querySelector('.IdLinea').textContent;
     const idPlanta = fila.querySelector('.IdPlanta').textContent;
-    const fP = fila.querySelector('.FechaPROG').textContent;
+    const fechaProg = fila.querySelector('.FechaPROG').textContent;
 
     const fechaRealiz = fila.querySelector('.FR').textContent;
 
-    const fechaStr = new Date(fP);
-    const fechaProg = fechaStr;
+    //const fechaStr = new Date(fP);
+    //const fechaProg = fechaStr;
 
 
     const realizadoPor = fila.querySelector('.RalP').textContent;
@@ -62,10 +62,10 @@ export const mostrarDetalles =  (e) => {
         idLinea,
         idPlanta,
         fechaProg,
-        realizadoPor,
+        fechaRealiz,
         revisadoPor,
         aprobadoPor,
-        fechaRealiz,
+        realizadoPor,
         nserie,
         estatus,
         estacion,
@@ -74,7 +74,7 @@ export const mostrarDetalles =  (e) => {
         comentarios
     ];
 
-    const miListaS = [
+    const miListaL = [
         "Linea",
         "Planta",
         "Fecha programada",
@@ -89,6 +89,24 @@ export const mostrarDetalles =  (e) => {
         "Cambios realizados",
         "Comentarios"
     ];
+
+    const miListaN = [
+        "idLinea",
+        "idPlanta",
+        "fechaProg",
+        "fechaRealiz",
+        "revisadoPor",
+        "aprobadoPor",
+        "realizadoPor",
+        "nserie",
+        "estatus",
+        "estacion",
+        "problemasEncontrados",
+        "cambiosRealizados",
+        "comentarios"
+    ];
+
+ 
 
 
  
@@ -131,22 +149,23 @@ export const mostrarDetalles =  (e) => {
 
         // Crear una etiqueta para el campo de entrada
         const label = document.createElement("label");
-        label.setAttribute("for", miListaS[indice]);
-        label.textContent = miListaS[indice];
+        label.setAttribute("for", miListaL[indice]);
+        label.textContent = miListaL[indice];
 
         // Crear el campo de entrada
         const input = document.createElement("input");
-        if (indice == 2) {
+        if (indice == 2 || indice == 3) {
             input.type = "date";
         } else {
             input.type = "text";
 
         }
         
-        input.id = valor;
+        input.id = miListaN[indice];
         input.className = "form-control form-control-sm";
-        input.name = valor;
+        input.name = miListaN[indice];
         input.value = valor;
+
 
         // Agregar la etiqueta y el campo de entrada al div
         newDiv.appendChild(label);
@@ -156,36 +175,21 @@ export const mostrarDetalles =  (e) => {
         formElement.appendChild(newDiv);
     });
 
+    const newDiv = document.createElement("div");
+    newDiv.className = "mb-2";
 
+    // Crear una etiqueta para el campo de entrada
+    const inputb = document.createElement("input");
+    inputb.type = "submit";
+    inputb.id = "btnGuardar";
+    inputb.className = "btn btn-success btn-sm";
+    /*newDiv.appendChild(label);*/
+    newDiv.appendChild(inputb);
+
+    // Agregar el nuevo div al formulario
+    formElement.appendChild(newDiv);
     
-    //const formElement = document.getElementById("formLiberarP");
 
-    //// Recorrer la lista y crear un div con cada valor
-    //miLista.forEach(valor => {
-    //    // Crear un nuevo div
-    //    const newDiv = document.createElement("div");
-    //    newDiv.className = "mb-2";
-
-    //    // Crear una etiqueta para el campo de entrada
-    //    const label = document.createElement("label");
-    //    label.setAttribute("for", "personaLibera");
-    //    label.textContent = valor;
-
-    //    // Crear el campo de entrada
-    //    const input = document.createElement("input");
-    //    input.type = "text";
-    //    input.id = "personaLibera";
-    //    input.className = "form-control form-control-sm";
-    //    input.name = "persona_libera";
-    //    input.value = valor;
-
-    //    // Agregar la etiqueta y el campo de entrada al div
-    //    newDiv.appendChild(label);
-    //    newDiv.appendChild(input);
-
-    //    // Agregar el nuevo div al formulario
-    //    formElement.appendChild(newDiv);
-    //});
 
 }
 
