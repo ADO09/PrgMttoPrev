@@ -36,3 +36,10 @@ body {
     background-color: #60FE43; /* Color de fondo original */
     /*opacity: 0.5;*/ /* Opacidad del 50% */
 }
+
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 0rem);
+}

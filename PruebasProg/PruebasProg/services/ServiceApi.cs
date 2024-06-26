@@ -26,7 +26,7 @@ namespace PruebasProg.services
             var cliente = new HttpClient();
             // cliente.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/todos");
             // var response = await cliente.GetAsync("https://jsonplaceholder.typicode.com/posts");
-            var response = await cliente.GetAsync("http://172.30.106.32:3001/mttos");
+            var response = await cliente.GetAsync("http://172.30.106.57:3001/mttos");
 
 
 

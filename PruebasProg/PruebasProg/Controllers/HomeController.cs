@@ -1,41 +1,78 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Mvc;
+using OfficeOpenXml;
 using PruebasProg.Models;
 using System.Diagnostics;
-using Aspose.Cells;
 using System.IO;
+using Microsoft.AspNetCore.Hosting;
+
 
 namespace PruebasProg.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        
+
+
+        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment)
         {
             _logger = logger;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         public IActionResult Index()
         {
 
-            // Ruta del archivo Excel existente
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "App_Data", "C: /Users/jaime.cardenas/DocumentsPRUEBAEXCEL.xlsx");
 
-            // Cargar el archivo Excel existente
-            Workbook workbook = new Workbook(filePath);
+         
+            // Verificar si el archivo existe
+            // Ruta del archivo Excel
+            string webRootPath = _hostingEnvironment.WebRootPath;
+            string filePath = Path.Combine(webRootPath, "archivosMttos", "PROGRAMACION DE MANTENIMIENTOS MAYO.xlsx");
+            Debug.WriteLine($"Ruta del archivo Excel: {filePath}");
 
-            // Acceder a la hoja de trabajo (worksheet) que deseas modificar
-            Worksheet worksheet = workbook.Worksheets[0];
 
-            // Modificar una celda específica
-            worksheet.Cells["A1"].PutValue("Nuevo valor");
+            string nombreArchivo = "PRUEBAEXCEL_copiado.xlsx"; // Nombre del archivo duplicado
+            string rutaDestino = Path.Combine(webRootPath, "archivosMttos", nombreArchivo);
+            // Verificar si el archivo existe
+            if (System.IO.File.Exists(filePath))
+            {
 
-            // Guardar los cambios de vuelta al mismo archivo (sobrescribir)
-            workbook.Save(filePath, SaveFormat.Xlsx);
+                Debug.WriteLine("SI EXISTE LJAHDOIUAHDIOUAHDSOIU");
+                try
+                {
 
-            // Opcional: Puedes devolver un archivo descargable
-            // byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
-            // return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "tu_archivo_modificado.xlsx");
+                    System.IO.File.Copy(filePath, rutaDestino, true);
+                    ViewBag.Message = "Archivo duplicado correctamente.";
+
+                    // Abrir el archivo Excel usando EPPlus
+                    using (ExcelPackage package = new ExcelPackage(new FileInfo(filePath)))
+                    {
+                        // Obtener la hoja de trabajo (worksheet)
+                        ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
+
+                        // Modificar el contenido según tus necesidades
+                        worksheet.Cells["H18"].Value = "CODIGO";
+
+                        // Guardar los cambios
+                        package.Save();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.ErrorMessage = ex.Message;
+                 
+                }
+            }
+            else
+            {
+                // Manejar el caso en que el archivo no exista
+                ViewBag.Error = "El archivo Excel no existe.";
+            }
 
             return View();
 
@@ -52,8 +89,60 @@ namespace PruebasProg.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-     
+
+
+
+    //    public IActionResult DuplicateFile()
+    //    {
+    //        string webRootPath = _hostingEnvironment.WebRootPath;
+    //        string rutaOrigen = Path.Combine(webRootPath, "archivosMttos", "PRUEBAEXCEL.xlsx");
+          
+
+    //        try
+    //        {
+    //            if (System.IO.File.Exists(rutaOrigen))
+    //            {
+                  
+    //            }
+    //            else
+    //            {
+    //                ViewBag.Error = "El archivo de origen no existe.";
+    //            }
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            ViewBag.Error = $"Error al duplicar el archivo: {ex.Message}";
+    //        }
+
+    //        return View();
+    //    }
 
 
     }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

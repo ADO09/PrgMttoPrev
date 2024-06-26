@@ -46,9 +46,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Aspose.Cells": {
+            "EPPlus": {
               "target": "Package",
-              "version": "[24.6.0, )"
+              "version": "[7.2.0, )"
             },
             "HtmlAgilityPack": {
               "target": "Package",
