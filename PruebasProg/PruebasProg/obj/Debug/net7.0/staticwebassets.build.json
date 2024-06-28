@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8AINYcgOYL+FvdOHbKCfLh81Gx5C0e2F6k07oeViJk4=",
+  "Hash": "jew6Wv5ukrxqjnbeuyW78Zbt3i47P+WF3wqbXSI7KZ4=",
   "Source": "PruebasProg",
   "BasePath": "_content/PruebasProg",
   "Mode": "Default",
@@ -1062,6 +1062,25 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Identity": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap4.0.0.min.js",
+      "SourceId": "PruebasProg",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\",
+      "BasePath": "_content/PruebasProg",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap4.0.0.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap4.0.0.min.js"
+    },
+    {
       "Identity": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PruebasProg",
       "SourceType": "Discovered",
@@ -1136,6 +1155,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Identity": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\lib\\jquery\\dist\\popper.min.js",
+      "SourceId": "PruebasProg",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\",
+      "BasePath": "_content/PruebasProg",
+      "RelativePath": "lib/jquery/dist/popper.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\popper.min.js"
     },
     {
       "Identity": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\lib\\jquery\\LICENSE.txt",

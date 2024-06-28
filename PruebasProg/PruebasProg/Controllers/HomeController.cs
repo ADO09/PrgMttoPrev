@@ -56,7 +56,7 @@ namespace PruebasProg.Controllers
                         ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
 
                         // Modificar el contenido según tus necesidades
-                        worksheet.Cells["H18"].Value = "CODIGO";
+                        worksheet.Cells["G18"].Value = "22";
 
                         // Guardar los cambios
                         package.Save();
