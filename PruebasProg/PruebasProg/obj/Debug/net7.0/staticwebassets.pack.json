@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\PruebasProg.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\2025\\Programa-MttoExel-JUNIO.xlsx",
+      "PackagePath": "staticwebassets\\archivosMttos\\2025\\Programa-MttoExel-JUNIO.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\2025\\~$Programa-MttoExel-JUNIO.xlsx",
+      "PackagePath": "staticwebassets\\archivosMttos\\2025\\~$Programa-MttoExel-JUNIO.xlsx"
+    },
+    {
       "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\PROGRAMACION DE MANTENIMIENTOS MAYO.pdf",
       "PackagePath": "staticwebassets\\archivosMttos\\PROGRAMACION DE MANTENIMIENTOS MAYO.pdf"
     },
@@ -21,6 +29,18 @@
       "PackagePath": "staticwebassets\\archivosMttos\\PRUEBAEXCEL_copiado.xlsx"
     },
     {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\Programa-MttoExel-AGOSTO.xlsx",
+      "PackagePath": "staticwebassets\\archivosMttos\\Programa-MttoExel-AGOSTO.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\Programa-MttoExel-JULIO.xlsx",
+      "PackagePath": "staticwebassets\\archivosMttos\\Programa-MttoExel-JULIO.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\master\\ProgMM.xlsx",
+      "PackagePath": "staticwebassets\\archivosMttos\\master\\ProgMM.xlsx"
+    },
+    {
       "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\~$PROGRAMACION DE MANTENIMIENTOS MAYO.xlsx",
       "PackagePath": "staticwebassets\\archivosMttos\\~$PROGRAMACION DE MANTENIMIENTOS MAYO.xlsx"
     },
@@ -31,6 +51,18 @@
     {
       "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\images\\add.png",
+      "PackagePath": "staticwebassets\\images\\add.png"
+    },
+    {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\images\\excel.png",
+      "PackagePath": "staticwebassets\\images\\excel.png"
+    },
+    {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\images\\pdf.png",
+      "PackagePath": "staticwebassets\\images\\pdf.png"
     },
     {
       "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\js\\site.js",
@@ -275,6 +307,10 @@
     {
       "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\lib\\jquery\\dist\\popper.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\lib\\swal-alert\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\lib\\swal-alert\\sweetalert2.all.min.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PruebasProg.Microsoft.AspNetCore.StaticWebAssets.props",

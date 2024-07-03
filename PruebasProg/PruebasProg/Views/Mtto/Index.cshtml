@@ -40,7 +40,7 @@
                             <th>Estacion</th>
                             @*   <th>Problemas encontrados</th>
                         <th>Cambios realizados</th> *@
-                           @*  <th>Comentarios</th> *@
+                            @*  <th>Comentarios</th> *@
 
                             @*  <th>Estado</th> *@
                             <th></th>
@@ -58,20 +58,20 @@
                                 <td class="IdPlanta">@item.IdPlanta</td>
 
 
-                                <td style="display:none" class="RalP" >@item.RealizadoPor</td>
+                                <td style="display:none" class="RalP">@item.RealizadoPor</td>
                                 <td style="display:none" class="RevP">@item.RevisadoPor</td>
                                 <td style="display:none" class="aprvP">@item.AprobadoPor</td>
 
                                 <td class="FechaPROG">@item.FechaPROG</td>
 
 
-                                <td style ="display:none" class="FR" >@item.FechaRealiz</td>
+                                <td style="display:none" class="FR">@item.FechaRealiz</td>
 
 
 
-                                <td  class="Nserie">@item.Nserie</td>
-                                <td  class="Estatus">@item.Estatus</td>
-                                <td  class="Estacion">@item.Estacion</td>
+                                <td class="Nserie">@item.Nserie</td>
+                                <td class="Estatus">@item.Estatus</td>
+                                <td class="Estacion">@item.Estacion</td>
 
 
                                 <td style="display:none" class="PE">@item.ProblemasEncontrados</td>
@@ -217,24 +217,92 @@
         </div>
 
 
+        <div class="container-bt-add">
+            <div class="m-2">
+                <button type="button" id="idBtnAddProg" class="btn btn-success btnAddProg">
+                    Agregar
+                    <img src="/images/add.png" id="idimgAddProg" alt="Descripción de la imagen">
+                </button>
+            </div>
+        </div>
+        <div class="container-itemsD">
+        </div>
 
     </div>
 </div>
 
 
 
+<div class="modal fade" id="exampleModalAddMtto" tabindex="-1" aria-labelledby="exampleModalLabelAddMtto "
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalAddMtto">Mantenimiento preventivos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formaddMtto" class="formUpdate">
+
+                    <div class="mb-2">
+                        <label for="selectfecha">Elige la primera fecha a realizar el mantenimiento</label>
+                        <input type="date" id="selectfecha" name="FechaPROG" class="form-control form-control-sm">
+                    </div>
+                    <div class="mb-2">
+                        <label for="realizadoPor">Persona que realiza el mtto</label>
+                        <input type="text" id="realizadoPor" class="form-control form-control-sm" name="realizadoPor">
+                    </div>
+                    <div class="mb-2">
+                        <label for="revisadoPor">Persona que revisa el mtto</label>
+                        <input type="text" id="revisadoPor" class="form-control form-control-sm" name="revisadoPor">
+                    </div>
+                    <div class="mb-2">
+                        <label for="aprobadoPor">Persona que aprueva el mtto</label>
+                        <input type="text" id="aprobadoPor" class="form-control form-control-sm" name="aprobadoPor">
+                    </div>
+                    <div class="mb-2">
+                        <label for="Sup-Is">Sup-Is</label>
+                        <input type="text" id="Sup-Is" class="form-control form-control-sm" name="SupIs">
+                    </div>
+                    <div class="mb-2">
+                        <label for="Gte-Is">Gte-Is</label>
+                        <input type="text" id="Gte-Is" class="form-control form-control-sm" name="GteIs">
+                    </div>
+                    <div class="mb-2">
+                        <label for="Planta">Planta</label>
+                        <select id="planta" class="form-select" aria-label="Default select example" name="planta">
+                            <option selected>Open this select menu</option>
+                            <option value="MCH1">Mch1</option>
+                            <option value="MCH2">MCH2</option>
+                            <option value="MCH3">MCH3</option>
+                        </select>
+                    </div>
 
 
 
 
+                    @*   <div class="mb-2">
+                    <label for="imageAfter">Imagen</label>
+                    <input type="file" id="imagenAfter" class="form-control form-control-sm" name="imagen_after"
+                    accept="image/*">
+                    </div> *@
 
 
 
+                    <hr>
+
+                    <div class="container-buttons">
+                        <button type="submit" id="btnGuardarLiberar" class="btn btn-success btn-sm btnAddMtto">Add</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
-
-
-<!-- MODAL LIBERAR-->
 <div class="modal fade" id="exampleModalLiberar" tabindex="-1" aria-labelledby="exampleModalLabelLiberar"
      aria-hidden="true">
     <div class="modal-dialog">
@@ -251,19 +319,19 @@
                     accept="image/*">
                     </div> *@
 
-               
+
                     @* <div class="mb-2">
-                        <label for="contra">contraseña</label>
-                        <input type="password" id="contra" class="form-control form-control-sm" name="contra">
+                    <label for="contra">contraseña</label>
+                    <input type="password" id="contra" class="form-control form-control-sm" name="contra">
                     </div>*@
 
 
                     <hr>
 
-                 @*    <div class="container-buttons">
-                        <button type="submit" id="btnGuardarLiberar" class="btn btn-success btn-sm">Liberar</button>
+                    @*    <div class="container-buttons">
+                    <button type="submit" id="btnGuardarLiberar" class="btn btn-success btn-sm">Liberar</button>
                     </div>
- *@
+                    *@
                 </form>
 
             </div>
@@ -272,13 +340,57 @@
 </div>
 
 
+<!-- MODAL 2-->
+<div class="modal fade" id="exampleModalPDF" !important" tabindex="-1" aria-labelledby="exampleModalLabelPDF" aria-hidden="true">
+    <div class="modal-dialog large modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabelPDF">Documento</h5>
+                <button id="btn-close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <embed id="pdfView" src="" type="application/pdf" width="100%" height="800px">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL 1-->
+
+
 
 <script type="module">
     import { $, $a } from "/js/utils.js";
-    import { obtenerDatosMtto, contenedorDatos, mostrarDetalles } from '/js/MttoIndex.js'
-    //document.addEventListener('DOMContentLoaded', obtenerDatosMtto);
+    import { obtenerDatosMtto, contenedorDatos, mostrarDetalles, mostratModalAddMtto, AddMTTOandPdf } from '/js/MttoIndex.js'
+    document.addEventListener('DOMContentLoaded', obtenerDatosMtto);
+    $('.btnAddProg').addEventListener('click', mostratModalAddMtto);
+    $('.formUpdate').addEventListener('submit', AddMTTOandPdf);
+
+
+
+
+
+
+
     const filas = $a('.container-RowData');
     filas.forEach((fila) => {
         fila.addEventListener('click', mostrarDetalles);
+    });
+
+    const datePickerId = document.getElementById("selectfecha");
+    datePickerId.addEventListener("input", () => {
+        console.log(datePickerId.value);
+        const day = datePickerId.value.substring(8, 10);
+        console.log(day);
+        // const day = date.getDay() + 1;
+        console.log(day);
+        if (day == 1 || day == 2 || day == 30 || day == 31) {
+            datePickerId.value = ""; // Limpiar la selección
+            Swal.fire({
+                // title: 'Exito!',
+                text: "Los días 1 , 2 ,30 y 31 están desactivados. Por favor, selecciona otra fecha.",
+                icon: "info",
+            });
+            
+        }
     });
 </script>

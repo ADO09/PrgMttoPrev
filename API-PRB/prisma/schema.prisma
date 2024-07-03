@@ -31,4 +31,8 @@ model MttosTable {
   AprobadoPor String?
   estatus String?
   estacion String?
+  planta String?
+  path_excel String?
+  path_pdf String?
+  
 }

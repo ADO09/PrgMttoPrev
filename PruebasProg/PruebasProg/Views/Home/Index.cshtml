@@ -15,7 +15,7 @@
 
 
 <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-    <div class="modal-dialog modal-xl" >
+    <div class="modal-dialog large modal-xl" >
         <div class="modal-content" >
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Documento</h5>
@@ -27,6 +27,7 @@
         </div>
     </div>
 </div>
+
 
 
 
@@ -46,6 +47,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="card">
         <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
@@ -118,19 +121,19 @@
     })
 
 
-    $(".btn-close").addEventListener('click', (e) => {
-        let tagNameClick = e.target.tagName.toLowerCase();
-        let idClick = e.target.id;
+    // $(".btn-close").addEventListener('click', (e) => {
+    //     let tagNameClick = e.target.tagName.toLowerCase();
+    //     let idClick = e.target.id;
 
 
-        if (idClick == "btn-close" && tagNameClick === "button") {
+    //     if (idClick == "btn-close" && tagNameClick === "button") {
 
-            console.log("iuausdiasd");
-            const modal = new bootstrap.Modal($("#exampleModal"));
-            modal.toggle();
+    //         console.log("iuausdiasd");
+    //         const modal = new bootstrap.Modal($("#exampleModal"));
+    //         modal.close();
 
-        }
-    })
+    //     }
+    // })
 
 
 

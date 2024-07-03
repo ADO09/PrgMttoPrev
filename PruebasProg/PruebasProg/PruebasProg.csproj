@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\archivosMttos\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

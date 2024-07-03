@@ -28,37 +28,83 @@ app.get("/mttos", async (req, res) => {
 
 
 
-// Ruta para crear un nuevo registro
-app.post('/mttosP', async (req, res) => {
+
+// app.post("/mttosPost", async (req, res) => {
+//   try {
+//     const { idLinea, idPlanta, Nserie, comentarios } = req.body; // Obtén los datos del cuerpo de la solicitud
+
+//     // Crea un nuevo registro en la tabla MttosTable
+//     const nuevoMttos = await prisma.MttosTable.create({
+//       data: {
+//         idLinea,
+//         idPlanta,
+//         Nserie,
+//         comentarios,
+//         // Agrega otros campos según sea necesario
+//       },
+//     });
+
+//     console.log("Nuevo registro creado:", nuevoMttos);
+//     res.json(nuevoMttos);
+//   } catch (error) {
+//     console.error("Error al crear el registro:", error);
+//     res.status(500).json({ error: "Error al crear el registro" });
+//   }
+// });
+
+
+
+app.post("/mttosPost", async (req, res) => {
   try {
     const {
       idLinea,
       idPlanta,
       Nserie,
+      comentarios,
+      problemasEncontrados,
+      cambiosRealizados,
+      path_IMG,
       FechaPROG,
       FechaRealiz,
       RealizadoPor,
       RevisadoPor,
       AprobadoPor,
+      estatus,
+      estacion,
+      planta,
+      path_excel,
+      path_pdf,
     } = req.body;
 
-    // Crea el nuevo registro en la tabla MttosTable
-    const newMttos = await prisma.mttosTable.create({
-      data: {
-        idLinea,
-        idPlanta,
-        Nserie,
-        FechaPROG,
-        FechaRealiz,
-        RealizadoPor,
-        RevisadoPor,
-        AprobadoPor,
-      },
-    });
+    // Crea un nuevo registro en la tabla MttosTable
+    // const nuevoMttos = await prisma.MttosTable.create({
+    //   data: {
+        // idLinea,
+        // idPlanta,
+        // Nserie,
+        // comentarios,
+        // problemasEncontrados,
+        // cambiosRealizados,
+        // path_IMG,
+        // FechaPROG,
+        // FechaRealiz,
+        // RealizadoPor,
+        // RevisadoPor,
+        // AprobadoPor,
+        // estatus,
+        // estacion,
+        // planta,
+        // path_excel,
+        // path_pdf,
+    //   },
+    // });
 
-    res.status(201).json(newMttos);
+
+    console.log(req.body.idLinea);
+    // console.log("Nuevo registro creado:", nuevoMttos);
+    res.json(req.body);
   } catch (error) {
-    console.error('Error al crear el registro:', error);
-    res.status(500).json({ error: 'Error al crear el registro' });
+    console.error("Error al crear el registro:", error);
+    res.status(500).json({ error: "Error al crear el registro" });
   }
 });
