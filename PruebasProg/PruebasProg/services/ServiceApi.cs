@@ -2,14 +2,45 @@
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Diagnostics;
 
 namespace PruebasProg.services
 {
     public class ServiceApi : IServiceApi
     {
-        public Task<bool> Guardar(MttoListModel objeto)
+        public async Task<bool> Guardar(MttoListModel objeto)
         {
-            throw new NotImplementedException();
+            bool respuesta = false;
+            //objeto.imagen = null;
+
+
+            Console.WriteLine("service data : " + objeto.Comentarios);
+
+
+            var cliente = new HttpClient();
+            // cliente.BaseAddress = new Uri(_baseUrl);
+
+            string json = JsonConvert.SerializeObject(objeto);
+
+            // Define el contenido de la solicitud HTTP
+            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+
+            // var content = new StringContent(JsonConvert.SerializeObject(objeto), Encoding.UTF8, "application/json");
+
+            Debug.WriteLine("El valor de respuesta es: " + content);
+
+
+            var response = await cliente.PostAsync("http://172.30.106.57:3001/mttosPost", content);
+
+
+
+            if (response.IsSuccessStatusCode)
+            {
+                respuesta = true;
+            }
+
+            return respuesta;
         }
 
         public Task<bool> Liberar(MttoListModel objeto)

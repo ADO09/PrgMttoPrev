@@ -63,7 +63,7 @@ namespace PruebasProg.Controllers
 
         // POST: MttoController/Create
         [HttpPost]
-        public async Task<IActionResult> AddMtto(MttoListModel mtoModel)
+        public async Task<IActionResult> AddPrgandPDFMtto(MttoListModel mtoModel)
         {
 
 
@@ -271,10 +271,26 @@ namespace PruebasProg.Controllers
             //}
         }
 
-        // GET: MttoController/Edit/5
-        public ActionResult Edit(int id)
+        [HttpPost]
+        public async Task<IActionResult> AddMtto(MttoListModel MtoObj)
         {
-            return View();
+            Debug.WriteLine("3 :" + MtoObj.IdPlanta);
+            Debug.WriteLine("3 :" + MtoObj.IdLinea);
+            Debug.WriteLine("4 :" + MtoObj.Nserie);
+            Debug.WriteLine("5 :" + MtoObj.Comentarios);
+
+
+            bool respuesta;
+
+            respuesta = await _serviceApi.Guardar(MtoObj);
+
+
+            if (respuesta)
+                return NoContent();
+            else
+                return BadRequest("Error al guardar los datos.");
+
+           
         }
 
         // POST: MttoController/Edit/5

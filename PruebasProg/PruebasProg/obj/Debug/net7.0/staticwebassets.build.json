@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BpK1Z9B54HJRt/5GZRIBmEJ5DPjmOkGkRbo2d37FAP4=",
+  "Hash": "910JbOPFXhDJNVywZKG2SnclUCus6FFdR4N8xfXu2VA=",
   "Source": "PruebasProg",
   "BasePath": "_content/PruebasProg",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\archivosMttos\\~$PROGRAMACION DE MANTENIMIENTOS MAYO.xlsx"
     },
     {
-      "Identity": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\2025\\~$Programa-MttoExel-JUNIO.xlsx",
+      "Identity": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\2024\\MCH3\\Programa-MttoExel-JULIO.xlsx",
       "SourceId": "PruebasProg",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\",
       "BasePath": "_content/PruebasProg",
-      "RelativePath": "archivosMttos/2025/~$Programa-MttoExel-JUNIO.xlsx",
+      "RelativePath": "archivosMttos/2024/MCH3/Programa-MttoExel-JULIO.xlsx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\archivosMttos\\2025\\~$Programa-MttoExel-JUNIO.xlsx"
+      "OriginalItemSpec": "wwwroot\\archivosMttos\\2024\\MCH3\\Programa-MttoExel-JULIO.xlsx"
     },
     {
       "Identity": "C:\\Users\\jaime.cardenas\\Desktop\\Prog\\GIT-PROG-MTTOS\\PruebasProg\\PruebasProg\\wwwroot\\archivosMttos\\2025\\Programa-MttoExel-JUNIO.xlsx",

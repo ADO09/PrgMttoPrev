@@ -9,5 +9,7 @@ namespace PruebasProg.services
         //Task<List<MttoListModel>> Filter(MttoListModel objeto);
         Task<bool> Guardar(MttoListModel objeto);
         Task<bool> Liberar(MttoListModel objeto);
+
+
     }
 }

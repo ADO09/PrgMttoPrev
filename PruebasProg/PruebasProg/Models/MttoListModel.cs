@@ -6,9 +6,9 @@ namespace PruebasProg.Models
     {
         public int? IdMTTO { get; set; }
 
-        public int? IdLinea { get; set; }
+        public string? IdLinea { get; set; }
 
-        public int? IdPlanta { get; set; }
+        public string? IdPlanta { get; set; }
 
         public string? Nserie { get; set; }
 
