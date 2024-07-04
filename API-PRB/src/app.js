@@ -57,50 +57,52 @@ app.get("/mttos", async (req, res) => {
 app.post("/mttosPost", async (req, res) => {
   try {
     const {
-      idLinea,
-      idPlanta,
+      IdLinea,
+      IdPlanta,
       Nserie,
-      comentarios,
-      problemasEncontrados,
-      cambiosRealizados,
-      path_IMG,
+      Comentarios,
+      ProblemasEncontrados,
+      CambiosRealizados,
+      Path_IMG,
       FechaPROG,
       FechaRealiz,
       RealizadoPor,
       RevisadoPor,
       AprobadoPor,
-      estatus,
-      estacion,
+      Estatus,
+      Estacion,
+      SupIs,
+      GteIs,
       planta,
-      path_excel,
-      path_pdf,
+      mesName,
     } = req.body;
 
     // Crea un nuevo registro en la tabla MttosTable
-    // const nuevoMttos = await prisma.MttosTable.create({
-    //   data: {
-        // idLinea,
-        // idPlanta,
-        // Nserie,
-        // comentarios,
-        // problemasEncontrados,
-        // cambiosRealizados,
-        // path_IMG,
-        // FechaPROG,
-        // FechaRealiz,
-        // RealizadoPor,
-        // RevisadoPor,
-        // AprobadoPor,
-        // estatus,
-        // estacion,
-        // planta,
-        // path_excel,
-        // path_pdf,
-    //   },
-    // });
+    const nuevoMttos = await prisma.MttosTable.create({
+      data: {
+        IdLinea,
+        IdPlanta,
+        Nserie,
+        Comentarios,
+        ProblemasEncontrados,
+        CambiosRealizados,
+        Path_IMG,
+        FechaPROG,
+        FechaRealiz,
+        RealizadoPor,
+        RevisadoPor,
+        AprobadoPor,
+        Estatus,
+        Estacion,
+        SupIs,
+        GteIs,
+        planta,
+        mesName,
+      },
+    });
 
 
-    console.log(req.body.idLinea);
+    console.log(req.body);
     // console.log("Nuevo registro creado:", nuevoMttos);
     res.json(req.body);
   } catch (error) {

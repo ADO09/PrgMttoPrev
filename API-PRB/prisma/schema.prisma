@@ -13,26 +13,43 @@ datasource db {
   url      = "file: db/dbSQLITE.db"
 }
 
-
-
 model MttosTable {
-  idMTTO     Int      @id @default(autoincrement())
-  idLinea    Int?
-  idPlanta   Int?
-  Nserie     String?
-  comentarios String?
-  problemasEncontrados String?
-  cambiosRealizados String?
-  path_IMG String?
-  FechaPROG  String?
-  FechaRealiz String?
-  RealizadoPor String?
-  RevisadoPor String?
-  AprobadoPor String?
-  estatus String?
-  estacion String?
-  planta String?
-  path_excel String?
-  path_pdf String?
-  
+  // idMTTO     Int      @id @default(autoincrement())
+  // idLinea    Int?
+  // idPlanta   Int?
+  // Nserie     String?
+  // comentarios String?
+  // problemasEncontrados String?
+  // cambiosRealizados String?
+  // path_IMG String?
+  // FechaPROG  String?
+  // FechaRealiz String?
+  // RealizadoPor String?
+  // RevisadoPor String?
+  // AprobadoPor String?
+  // estatus String?
+  // estacion String?
+  // planta String?
+  // path_excel String?
+  // path_pdf String?
+
+  IdMTTO               Int     @id @default(autoincrement())
+  IdLinea              String?
+  IdPlanta             String?
+  Nserie               String?
+  Comentarios          String?
+  ProblemasEncontrados String?
+  CambiosRealizados    String?
+  Path_IMG             String?
+  FechaPROG            String?
+  FechaRealiz          String?
+  RealizadoPor         String?
+  RevisadoPor          String?
+  AprobadoPor          String?
+  Estatus              String?
+  Estacion             String?
+  SupIs                String?
+  GteIs                String?
+  planta               String?
+  mesName              String?
 }
