@@ -104,6 +104,8 @@ export const obtenerDatosMtto = async () => {
                         const month = fechaObjMes.getMonth() + 1; // Suma 1 porque los meses están indexados desde 0
                         const day = fechaObjMes.getDate() + 1 ;
                         const fechaString = `${Planta}-${year}-${month}`;
+                        var nombreMes = obtenerNombreMes(month);
+                        nombreMes = nombreMes.toUpperCase();
                         console.log(fechaString);
                         /*console.log = (mes);*/
                         /* const mes = objPlanta.idPlanta;*/
@@ -117,14 +119,14 @@ export const obtenerDatosMtto = async () => {
             <div class="card-header" id="heading-${fechaString}">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-${fechaString}" aria-expanded="false" aria-controls="collapse-${year}">
-                       ${month}
+                       ${nombreMes}
                     </button>
                 </h5>
             </div>
 
             <div id="collapse-${fechaString}" class="collapse" aria-labelledby="heading-${fechaString}" data-parent="#accordion-${fechaString}">
                 <div class="card-body CbM-${fechaString}">
-          
+        
            `
 
                  MttoJson.forEach(function (objData) {
@@ -262,7 +264,7 @@ export const obtenerDatosMtto = async () => {
 
 
 
-   
+
 
     //oijdoijdf;odsjfo;isdj;ofiAQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
     //<div id="accordion-${fechaStringD}">
@@ -438,6 +440,13 @@ export const obtenerDatosMtto = async () => {
             //    `
             //});
 
+
+
+    function obtenerNombreMes(numeroMes) {
+        const fecha = new Date();
+        fecha.setMonth(numeroMes); // Establece el mes según el número proporcionado
+        return fecha.toLocaleString('es-ES', { month: 'long' });
+    }
 
 
             const filas = $a('.container-RowData');
